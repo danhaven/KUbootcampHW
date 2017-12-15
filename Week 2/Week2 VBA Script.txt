@@ -1,0 +1,41 @@
+Sub StockData()
+
+For Each ws In Worksheets
+    
+       
+       
+    Dim symbol As String
+    Dim volume As Double
+    volume = 0
+    
+    Dim summary_table_row As Integer
+    summary_table_row = 2
+    
+    lastrow = ws.Cells(Rows.Count, 1).End(xlUp).Row
+     
+    
+    For i = 2 To lastrow
+    
+    
+        If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+        
+        symbol = ws.Cells(i, 1).Value
+                
+        volume = volume + ws.Cells(i, 7).Value
+        
+        ws.Range("J" & summary_table_row).Value = symbol
+        ws.Range("k" & summary_table_row).Value = volume
+        
+        summary_table_row = summary_table_row + 1
+        
+        volume = 0
+               
+        Else: volume = volume + Cells(i, 7).Value
+        
+        End If
+    Next i
+                
+Next ws
+
+
+End Sub
