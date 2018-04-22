@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Lattitude</a>
+                  </div>
+              
+                  
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        <div class="container">
+        <div class = "row">
+                <div class="col-lg-7 col-sm-12">
+                        <h1>Humidity</h1>
+                        <hr>
+                        <br>
+                            <img src="humidity.png" alt="Latiitude vs. Humidity" width = "680" height="480">
+                            <br>
+                            <p>
+                                There does appear to be a slight correlation between lattitude and humidity.  Cities farther from the equator have less humidity on average 
+                                This plot shows humidity rates compared to Latitude of each city in the dataset.    
+                            </p>
+
+                </div>
+
+                <div class="col-lg-3 col-lg-offset-1 col-sm-12">
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3">
+                        <a href ="maxtemp.html">
+                        <img src="maxtemp.png" alt="Latiitude vs. Max Temperature" width = "140" height="120" >
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-3">
+                    <a href = "humidity.html">
+                        <img src="humidity.png" alt="Latitude vs. Humidity" width = "140" height="120" style="border: rgb(113, 189, 240) 3px solid;">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-3">
+                    <a href = "cloudiness.html">
+                         <img src="cloudiness.png" alt="Latitude vs. Cloudiness" width = "140" height="120">
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-6 col-sm-3">
+                    <a href="windspeed.html">
+                        <img src="windspeed.png" alt="Latitude vs. Wind Speed" width = "140" height="120">
+                        </a>
+                    </div>
+                    
+            </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <footer class="footer navbar-fixed-bottom">
+          <div class="two-toned-footer-color"></div>
+          <p class="text-muted text-muted-footer text-center">
+          </p>
+        </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
