@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Aliens</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class = "container-fluid">
+        <div class = "text-center">
+            <h1><strong>Aliens R Real</strong></h1>
+            <h2>Alien Sightings Data (since 2010)</h2>
+            <p>
+                <strong>WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at ALIENS-R-REAL.com have collected all of the eye-witness reports we could to prove it! <br>
+                Enter a date below to find reports of alien activity in the USA</strong>  
+            </p>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12" style = "margin-left:400px">
+            <div class = "form-group">
+                <input type = "text" class = "form-control" id = "date_time" placeholder = "Enter Search Date (mm/dd/yyyy)">
+                <a id = "search" class = "btn btn-default">Search</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-12" id = "tsizing">
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Shape</th>
+                        <th>Duration</th>
+                        <th id="comment-width">Comments</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <script src = "data.js" type = "text/javascript"></script>
+    <script src = "aliensrreal.js" type = "text/javascript"></script>
+</body>
+</html>
